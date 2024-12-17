@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		byAYUnFt0ea0has6IflQSQcUMvs=
+		6hK2TfYhqg5YCDMF1cOVUn9R1O4=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ZIuEr4CVqKbmQIs++ntih4UABrw=
+		b6CB5tyD8JEcIRXx4efL2UzDP24=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ZIuEr4CVqKbmQIs++ntih4UABrw=
+		b6CB5tyD8JEcIRXx4efL2UzDP24=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		s0YB0/Ku0SEJlethVGTpSCa+dn8=
+		UM21N+nmtdPsgrNsuS0fugCqOhE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,14 +50,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OKk8wwZ8Ao15QN+KrJmsQzk8jf/WEtNia98Tlwwcvzg=
+			Ny2MphG+X4+h5AXQSe+0f1QZZxc4u+9QZw9fkN3e64s=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fO3jEv4xthI1tObMkywxCajQzoWst69IhGc6NDnCWxA=
+			wMEGSrDiyT5ozJUAuO1mqfzCnVi7n4iTWsYM+ukz7hg=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -71,14 +71,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fO3jEv4xthI1tObMkywxCajQzoWst69IhGc6NDnCWxA=
+			wMEGSrDiyT5ozJUAuO1mqfzCnVi7n4iTWsYM+ukz7hg=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eJibWtqZkTeM5wDxAPJdXpngt/jsLDHdVznG54rsK5A=
+			XCx6uYhOmyQXIbMfMECzWiSY6/7GCqpGZOthq+mqEGA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

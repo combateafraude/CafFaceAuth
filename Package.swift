@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/combateafraude/FaceLiveness.git",
-            .exact("6.3.0")
+            .exact("6.3.2")
         )
     ],
     targets: [
