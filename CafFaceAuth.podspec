@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CafFaceAuth'
-  s.version          = '6.2.1'
+  s.version = 'test-pipeline-1.0.0'
   s.summary          = 'CafFaceAuth'
   s.homepage         = 'https://github.com/combateafraude/iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
