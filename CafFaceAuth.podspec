@@ -20,5 +20,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
   s.ios.vendored_frameworks = 'Sources/CafFaceAuth.xcframework'
 
-  s.dependency 'FaceLiveness', '6.3.2'
+  s.dependency 'FaceLiveness', '7.1.0'
 end
