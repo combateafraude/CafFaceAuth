@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EKoJbDSsEXRKCDMszXMyIWOl4J8=
+		2FCecjpm7yB3fefKChmzJaZ12Q0=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		3LZMUGL2PyEQ4gD19iC7l5nNDtQ=
+		xAyUHCrVlwVKdH5gj/BndFtPc7M=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		P2oy4eUIfWtLqZRkruq7Qh88tNs=
+		UHACIiBz0I/GHFuSoAo/VUGYEkY=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		3LZMUGL2PyEQ4gD19iC7l5nNDtQ=
+		xAyUHCrVlwVKdH5gj/BndFtPc7M=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3hfIbN3h5NT16t8Q1iI/kCtRJwM=
+		IT3FRBgyy4VQjCK55Zc/Wi35X40=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FP3atAuwQFB37lh0qZyPqxkkGyrzYQ7oQwX82FQFzc0=
+			sdRq+3NzbpI0dioDkMhAHJ64l7Vlo4ZAHN9UUCYSBnc=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UazBkGa6ACccTPt9FoaZCALW2gosOPHRBrmE8i8LwEY=
+			1te3a2EHIecTsFCUMHQH9cwKxsJnJ1SqMaF1SLH5XLo=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FP3atAuwQFB37lh0qZyPqxkkGyrzYQ7oQwX82FQFzc0=
+			sdRq+3NzbpI0dioDkMhAHJ64l7Vlo4ZAHN9UUCYSBnc=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hy/UghBQEmRWMwUi14CdHeWr+9QcxFRPSr7zYZraw9g=
+			zYOfL087JXEx+F4am89kYWHgLPrGrugBfXK/0EZPWus=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

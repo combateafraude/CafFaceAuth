@@ -5078,7 +5078,7 @@
       "kind": "StringLiteral",
       "offset": 434,
       "length": 46,
-      "value": "\"6.3.0-iOS-\""
+      "value": "\"6.3.1-iOS-\""
     },
     {
       "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-sdks\/caf-face-auth\/FaceAuthenticator\/Models\/Constants.swift",
