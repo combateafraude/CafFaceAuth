@@ -580,8 +580,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "CafSDKFailure",
-        "printedName": "CafSDKFailure",
+        "name": "CafSDKError",
+        "printedName": "CafSDKError",
         "children": [
           {
             "kind": "Constructor",
@@ -590,23 +590,15 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "CafSDKFailure",
-                "printedName": "CafFaceAuth.CafSDKFailure",
-                "usr": "s:11CafFaceAuth0A10SDKFailureV"
+                "name": "CafSDKError",
+                "printedName": "CafFaceAuth.CafSDKError",
+                "usr": "s:11CafFaceAuth0A8SDKErrorV"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CafFaceAuth.CafErrorType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CafErrorType",
-                    "printedName": "CafFaceAuth.CafErrorType",
-                    "usr": "s:11CafFaceAuth0A9ErrorTypeO"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "CafErrorType",
+                "printedName": "CafFaceAuth.CafErrorType",
+                "usr": "s:11CafFaceAuth0A9ErrorTypeO"
               },
               {
                 "kind": "TypeNominal",
@@ -624,8 +616,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11CafFaceAuth0A10SDKFailureV9errorType11descriptionAcA0a5ErrorF0OSg_SSSgtcfc",
-            "mangledName": "$s11CafFaceAuth0A10SDKFailureV9errorType11descriptionAcA0a5ErrorF0OSg_SSSgtcfc",
+            "usr": "s:11CafFaceAuth0A8SDKErrorV9errorType11descriptionAcA0a5ErrorF0O_SSSgtcfc",
+            "mangledName": "$s11CafFaceAuth0A8SDKErrorV9errorType11descriptionAcA0a5ErrorF0O_SSSgtcfc",
             "moduleName": "CafFaceAuth",
             "declAttributes": [
               "AccessControl",
@@ -640,8 +632,26 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CafFaceAuth.CafErrorType?",
+                "name": "CafErrorType",
+                "printedName": "CafFaceAuth.CafErrorType",
+                "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CafFaceAuth0A8SDKErrorV9errorTypeAA0a5ErrorF0Ovp",
+            "mangledName": "$s11CafFaceAuth0A8SDKErrorV9errorTypeAA0a5ErrorF0Ovp",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -650,12 +660,38 @@
                     "usr": "s:11CafFaceAuth0A9ErrorTypeO"
                   }
                 ],
+                "declKind": "Accessor",
+                "usr": "s:11CafFaceAuth0A8SDKErrorV9errorTypeAA0a5ErrorF0Ovg",
+                "mangledName": "$s11CafFaceAuth0A8SDKErrorV9errorTypeAA0a5ErrorF0Ovg",
+                "moduleName": "CafFaceAuth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:11CafFaceAuth0A10SDKFailureV9errorTypeAA0a5ErrorF0OSgvp",
-            "mangledName": "$s11CafFaceAuth0A10SDKFailureV9errorTypeAA0a5ErrorF0OSgvp",
+            "usr": "s:11CafFaceAuth0A8SDKErrorV11descriptionSSSgvp",
+            "mangledName": "$s11CafFaceAuth0A8SDKErrorV11descriptionSSSgvp",
             "moduleName": "CafFaceAuth",
             "declAttributes": [
               "HasStorage",
@@ -672,21 +708,244 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "CafFaceAuth.CafErrorType?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "CafErrorType",
-                        "printedName": "CafFaceAuth.CafErrorType",
-                        "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11CafFaceAuth0A10SDKFailureV9errorTypeAA0a5ErrorF0OSgvg",
-                "mangledName": "$s11CafFaceAuth0A10SDKFailureV9errorTypeAA0a5ErrorF0OSgvg",
+                "usr": "s:11CafFaceAuth0A8SDKErrorV11descriptionSSSgvg",
+                "mangledName": "$s11CafFaceAuth0A8SDKErrorV11descriptionSSSgvg",
+                "moduleName": "CafFaceAuth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CafFaceAuth0A8SDKErrorV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11CafFaceAuth0A8SDKErrorV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CafFaceAuth",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11CafFaceAuth0A8SDKErrorV",
+        "mangledName": "$s11CafFaceAuth0A8SDKErrorV",
+        "moduleName": "CafFaceAuth",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CafSDKFailure",
+        "printedName": "CafSDKFailure",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(signedResponse:failureReason:description:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CafSDKFailure",
+                "printedName": "CafFaceAuth.CafSDKFailure",
+                "usr": "s:11CafFaceAuth0A10SDKFailureV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CafFailureType",
+                "printedName": "CafFaceAuth.CafFailureType",
+                "usr": "s:11CafFaceAuth0A11FailureTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CafFaceAuth0A10SDKFailureV14signedResponse13failureReason11descriptionACSSSg_AA0A11FailureTypeOAGtcfc",
+            "mangledName": "$s11CafFaceAuth0A10SDKFailureV14signedResponse13failureReason11descriptionACSSSg_AA0A11FailureTypeOAGtcfc",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "signedResponse",
+            "printedName": "signedResponse",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CafFaceAuth0A10SDKFailureV14signedResponseSSSgvp",
+            "mangledName": "$s11CafFaceAuth0A10SDKFailureV14signedResponseSSSgvp",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CafFaceAuth0A10SDKFailureV14signedResponseSSSgvg",
+                "mangledName": "$s11CafFaceAuth0A10SDKFailureV14signedResponseSSSgvg",
+                "moduleName": "CafFaceAuth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failureReason",
+            "printedName": "failureReason",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CafFailureType",
+                "printedName": "CafFaceAuth.CafFailureType",
+                "usr": "s:11CafFaceAuth0A11FailureTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CafFaceAuth0A10SDKFailureV13failureReasonAA0A11FailureTypeOvp",
+            "mangledName": "$s11CafFaceAuth0A10SDKFailureV13failureReasonAA0A11FailureTypeOvp",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafFaceAuth.CafFailureType",
+                    "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CafFaceAuth0A10SDKFailureV13failureReasonAA0A11FailureTypeOvg",
+                "mangledName": "$s11CafFaceAuth0A10SDKFailureV13failureReasonAA0A11FailureTypeOvg",
                 "moduleName": "CafFaceAuth",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1017,6 +1276,366 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "captureAlreadyActiveException",
+            "printedName": "captureAlreadyActiveException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafErrorType.Type) -> CafFaceAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafFaceAuth.CafErrorType",
+                    "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafFaceAuth.CafErrorType",
+                        "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A9ErrorTypeO29captureAlreadyActiveExceptionyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A9ErrorTypeO29captureAlreadyActiveExceptionyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unexpectedErrorException",
+            "printedName": "unexpectedErrorException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafErrorType.Type) -> CafFaceAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafFaceAuth.CafErrorType",
+                    "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafFaceAuth.CafErrorType",
+                        "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A9ErrorTypeO010unexpectedD9ExceptionyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A9ErrorTypeO010unexpectedD9ExceptionyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userTimeoutException",
+            "printedName": "userTimeoutException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafErrorType.Type) -> CafFaceAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafFaceAuth.CafErrorType",
+                    "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafFaceAuth.CafErrorType",
+                        "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A9ErrorTypeO20userTimeoutExceptionyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A9ErrorTypeO20userTimeoutExceptionyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageNotFoundException",
+            "printedName": "imageNotFoundException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafErrorType.Type) -> CafFaceAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafFaceAuth.CafErrorType",
+                    "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafFaceAuth.CafErrorType",
+                        "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A9ErrorTypeO22imageNotFoundExceptionyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A9ErrorTypeO22imageNotFoundExceptionyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tooManyRequestsException",
+            "printedName": "tooManyRequestsException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafErrorType.Type) -> CafFaceAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafFaceAuth.CafErrorType",
+                    "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafFaceAuth.CafErrorType",
+                        "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A9ErrorTypeO24tooManyRequestsExceptionyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A9ErrorTypeO24tooManyRequestsExceptionyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unknownException",
+            "printedName": "unknownException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafErrorType.Type) -> CafFaceAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafFaceAuth.CafErrorType",
+                    "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafFaceAuth.CafErrorType",
+                        "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A9ErrorTypeO16unknownExceptionyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A9ErrorTypeO16unknownExceptionyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "libraryException",
+            "printedName": "libraryException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafErrorType.Type) -> CafFaceAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafFaceAuth.CafErrorType",
+                    "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafFaceAuth.CafErrorType",
+                        "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A9ErrorTypeO16libraryExceptionyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A9ErrorTypeO16libraryExceptionyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "permissionException",
+            "printedName": "permissionException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafErrorType.Type) -> CafFaceAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafFaceAuth.CafErrorType",
+                    "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafFaceAuth.CafErrorType",
+                        "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A9ErrorTypeO19permissionExceptionyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A9ErrorTypeO19permissionExceptionyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalidResponseException",
+            "printedName": "invalidResponseException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafErrorType.Type) -> CafFaceAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafFaceAuth.CafErrorType",
+                    "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafFaceAuth.CafErrorType",
+                        "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A9ErrorTypeO24invalidResponseExceptionyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A9ErrorTypeO24invalidResponseExceptionyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -1083,6 +1702,66 @@
                 "usr": "s:11CafFaceAuth0A9ErrorTypeO8rawValueSSvg",
                 "mangledName": "$s11CafFaceAuth0A9ErrorTypeO8rawValueSSvg",
                 "moduleName": "CafFaceAuth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CafFaceAuth.CafErrorType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafFaceAuth.CafErrorType",
+                    "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CafFaceAuth0A9ErrorTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s11CafFaceAuth0A9ErrorTypeO8allCasesSayACGvpZ",
+            "moduleName": "CafFaceAuth",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CafFaceAuth.CafErrorType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafFaceAuth.CafErrorType",
+                        "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CafFaceAuth0A9ErrorTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s11CafFaceAuth0A9ErrorTypeO8allCasesSayACGvgZ",
+                "moduleName": "CafFaceAuth",
+                "static": true,
                 "implicit": true,
                 "accessorKind": "get"
               }
@@ -1154,6 +1833,712 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CafFaceAuth.CafErrorType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafFaceAuth.CafErrorType",
+                        "usr": "s:11CafFaceAuth0A9ErrorTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CafFailureType",
+        "printedName": "CafFailureType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafFailureType.Type) -> CafFaceAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafFaceAuth.CafFailureType",
+                    "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafFaceAuth.CafFailureType",
+                        "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A11FailureTypeO7unknownyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A11FailureTypeO7unknownyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tooMuchMovement",
+            "printedName": "tooMuchMovement",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafFailureType.Type) -> CafFaceAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafFaceAuth.CafFailureType",
+                    "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafFaceAuth.CafFailureType",
+                        "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A11FailureTypeO15tooMuchMovementyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A11FailureTypeO15tooMuchMovementyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tooBright",
+            "printedName": "tooBright",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafFailureType.Type) -> CafFaceAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafFaceAuth.CafFailureType",
+                    "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafFaceAuth.CafFailureType",
+                        "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A11FailureTypeO9tooBrightyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A11FailureTypeO9tooBrightyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tooDark",
+            "printedName": "tooDark",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafFailureType.Type) -> CafFaceAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafFaceAuth.CafFailureType",
+                    "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafFaceAuth.CafFailureType",
+                        "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A11FailureTypeO7tooDarkyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A11FailureTypeO7tooDarkyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "misalignedFace",
+            "printedName": "misalignedFace",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafFailureType.Type) -> CafFaceAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafFaceAuth.CafFailureType",
+                    "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafFaceAuth.CafFailureType",
+                        "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A11FailureTypeO010misalignedB0yA2CmF",
+            "mangledName": "$s11CafFaceAuth0A11FailureTypeO010misalignedB0yA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eyesClosed",
+            "printedName": "eyesClosed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafFailureType.Type) -> CafFaceAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafFaceAuth.CafFailureType",
+                    "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafFaceAuth.CafFailureType",
+                        "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A11FailureTypeO10eyesClosedyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A11FailureTypeO10eyesClosedyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceTooFar",
+            "printedName": "faceTooFar",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafFailureType.Type) -> CafFaceAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafFaceAuth.CafFailureType",
+                    "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafFaceAuth.CafFailureType",
+                        "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A11FailureTypeO10faceTooFaryA2CmF",
+            "mangledName": "$s11CafFaceAuth0A11FailureTypeO10faceTooFaryA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceTooClose",
+            "printedName": "faceTooClose",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafFailureType.Type) -> CafFaceAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafFaceAuth.CafFailureType",
+                    "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafFaceAuth.CafFailureType",
+                        "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A11FailureTypeO12faceTooCloseyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A11FailureTypeO12faceTooCloseyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sunglasses",
+            "printedName": "sunglasses",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafFailureType.Type) -> CafFaceAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafFaceAuth.CafFailureType",
+                    "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafFaceAuth.CafFailureType",
+                        "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A11FailureTypeO10sunglassesyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A11FailureTypeO10sunglassesyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "obscuredFace",
+            "printedName": "obscuredFace",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafFailureType.Type) -> CafFaceAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafFaceAuth.CafFailureType",
+                    "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafFaceAuth.CafFailureType",
+                        "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A11FailureTypeO08obscuredB0yA2CmF",
+            "mangledName": "$s11CafFaceAuth0A11FailureTypeO08obscuredB0yA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "multipleFaces",
+            "printedName": "multipleFaces",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafFaceAuth.CafFailureType.Type) -> CafFaceAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafFaceAuth.CafFailureType",
+                    "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafFaceAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafFaceAuth.CafFailureType",
+                        "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CafFaceAuth0A11FailureTypeO13multipleFacesyA2CmF",
+            "mangledName": "$s11CafFaceAuth0A11FailureTypeO13multipleFacesyA2CmF",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CafFaceAuth.CafFailureType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafFaceAuth.CafFailureType",
+                    "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CafFaceAuth0A11FailureTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s11CafFaceAuth0A11FailureTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "CafFaceAuth",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CafFaceAuth0A11FailureTypeO8rawValueSSvp",
+            "mangledName": "$s11CafFaceAuth0A11FailureTypeO8rawValueSSvp",
+            "moduleName": "CafFaceAuth",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CafFaceAuth0A11FailureTypeO8rawValueSSvg",
+                "mangledName": "$s11CafFaceAuth0A11FailureTypeO8rawValueSSvg",
+                "moduleName": "CafFaceAuth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CafFaceAuth.CafFailureType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafFaceAuth.CafFailureType",
+                    "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CafFaceAuth0A11FailureTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s11CafFaceAuth0A11FailureTypeO8allCasesSayACGvpZ",
+            "moduleName": "CafFaceAuth",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CafFaceAuth.CafFailureType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafFaceAuth.CafFailureType",
+                        "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CafFaceAuth0A11FailureTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s11CafFaceAuth0A11FailureTypeO8allCasesSayACGvgZ",
+                "moduleName": "CafFaceAuth",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11CafFaceAuth0A11FailureTypeO",
+        "mangledName": "$s11CafFaceAuth0A11FailureTypeO",
+        "moduleName": "CafFaceAuth",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CafFaceAuth.CafFailureType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafFaceAuth.CafFailureType",
+                        "usr": "s:11CafFaceAuth0A11FailureTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
           }
         ]
       },
@@ -3300,6 +4685,116 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "customLocalization",
+            "printedName": "customLocalization",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CafFaceAuth0bC3SDKC18customLocalizationSSSgvp",
+            "mangledName": "$s11CafFaceAuth0bC3SDKC18customLocalizationSSSgvp",
+            "moduleName": "CafFaceAuth",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CafFaceAuth0bC3SDKC18customLocalizationSSSgvg",
+                "mangledName": "$s11CafFaceAuth0bC3SDKC18customLocalizationSSSgvg",
+                "moduleName": "CafFaceAuth",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CafFaceAuth0bC3SDKC18customLocalizationSSSgvs",
+                "mangledName": "$s11CafFaceAuth0bC3SDKC18customLocalizationSSSgvs",
+                "moduleName": "CafFaceAuth",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CafFaceAuth0bC3SDKC18customLocalizationSSSgvM",
+                "mangledName": "$s11CafFaceAuth0bC3SDKC18customLocalizationSSSgvM",
+                "moduleName": "CafFaceAuth",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "startFaceAuthSDK",
             "printedName": "startFaceAuthSDK(viewController:mobileToken:personId:)",
@@ -3938,6 +5433,116 @@
                 ]
               },
               {
+                "kind": "Var",
+                "name": "customLocalization",
+                "printedName": "customLocalization",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC18customLocalizationSSSgvp",
+                "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC18customLocalizationSSSgvp",
+                "moduleName": "CafFaceAuth",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC18customLocalizationSSSgvg",
+                    "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC18customLocalizationSSSgvg",
+                    "moduleName": "CafFaceAuth",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC18customLocalizationSSSgvs",
+                    "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC18customLocalizationSSSgvs",
+                    "moduleName": "CafFaceAuth",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC18customLocalizationSSSgvM",
+                    "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC18customLocalizationSSSgvM",
+                    "moduleName": "CafFaceAuth",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init()",
@@ -4188,6 +5793,42 @@
                 "declKind": "Func",
                 "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC15setCertificates12certificatesAESaySSG_tF",
                 "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC15setCertificates12certificatesAESaySSG_tF",
+                "moduleName": "CafFaceAuth",
+                "isOpen": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setCustomLocalization",
+                "printedName": "setCustomLocalization(named:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "CafFaceAuth.FaceAuthSDK.Builder",
+                    "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC21setCustomLocalization5namedAESSSg_tF",
+                "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC21setCustomLocalization5namedAESSSg_tF",
                 "moduleName": "CafFaceAuth",
                 "isOpen": true,
                 "declAttributes": [
@@ -4724,6 +6365,83 @@
       "value": "2"
     },
     {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 4568,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 4663,
+      "length": 19,
+      "value": "\"too_much_movement\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 4778,
+      "length": 12,
+      "value": "\"too_bright\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 4878,
+      "length": 10,
+      "value": "\"too_dark\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 4978,
+      "length": 17,
+      "value": "\"misaligned_face\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 5076,
+      "length": 13,
+      "value": "\"eyes_closed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 5174,
+      "length": 14,
+      "value": "\"face_too_far\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 5283,
+      "length": 16,
+      "value": "\"face_too_close\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 5394,
+      "length": 12,
+      "value": "\"sunglasses\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 5493,
+      "length": 15,
+      "value": "\"obscured_face\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 5585,
+      "length": 16,
+      "value": "\"multiple_faces\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-utils\/CafJWTDecoder.swift",
       "kind": "IntegerLiteral",
       "offset": 240,
@@ -5078,7 +6796,7 @@
       "kind": "StringLiteral",
       "offset": 434,
       "length": 46,
-      "value": "\"6.3.1-iOS-\""
+      "value": "\"6.4.0-iOS-\""
     },
     {
       "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-sdks\/caf-face-auth\/FaceAuthenticator\/Models\/Constants.swift",
