@@ -131,7 +131,8 @@ public protocol FaceAuthSDKDelegate {
   func openLoadingScreenValidation()
   func closeLoadingScreenValidation()
 }
-@objc @_hasMissingDesignatedInitializers public class FaceAuthSDK : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers @available(*, deprecated, message: "This method of using the SDK is deprecated. Use CafSDK as the single entry point for all functionalities. Access the integration documentation at: https://docs.caf.io/caf-sdk/ios/getting-started-with-the-sdk")
+public class FaceAuthSDK : ObjectiveC.NSObject {
   public var stage: CafFaceAuth.CafEnvironment
   public var filter: FaceLiveness.Filter
   public var delegate: (any CafFaceAuth.FaceAuthSDKDelegate)?
@@ -142,8 +143,10 @@ public protocol FaceAuthSDKDelegate {
     set
   }
   public var customLocalization: Swift.String?
+  @available(*, deprecated, message: "This method of using the SDK is deprecated. Use CafSDK as the single entry point for all functionalities. Access the integration documentation at: https://docs.caf.io/caf-sdk/ios/getting-started-with-the-sdk")
   open func startFaceAuthSDK(viewController: UIKit.UIViewController, mobileToken: Swift.String, personId: Swift.String)
-  @_inheritsConvenienceInitializers @objc open class Builder : ObjectiveC.NSObject, Swift.Encodable {
+  @_inheritsConvenienceInitializers @available(*, deprecated, message: "This method of using the SDK is deprecated. Use CafSDK as the single entry point for all functionalities. Access the integration documentation at: https://docs.caf.io/caf-sdk/ios/getting-started-with-the-sdk")
+  @objc open class Builder : ObjectiveC.NSObject, Swift.Encodable {
     public var stage: CafFaceAuth.CafEnvironment
     public var sessionId: Swift.String
     public var withLoading: Swift.Bool
@@ -162,6 +165,7 @@ public protocol FaceAuthSDKDelegate {
     open func setLivenessBaseUrl(livenessBaseUrl: Swift.String) -> CafFaceAuth.FaceAuthSDK.Builder
     open func setCertificates(certificates: [Swift.String]) -> CafFaceAuth.FaceAuthSDK.Builder
     open func setCustomLocalization(named: Swift.String?) -> CafFaceAuth.FaceAuthSDK.Builder
+    @available(*, deprecated, message: "This method of using the SDK is deprecated. Use CafSDK as the single entry point for all functionalities. Access the integration documentation at: https://docs.caf.io/caf-sdk/ios/getting-started-with-the-sdk")
     open func build() -> CafFaceAuth.FaceAuthSDK
     @objc deinit
   }

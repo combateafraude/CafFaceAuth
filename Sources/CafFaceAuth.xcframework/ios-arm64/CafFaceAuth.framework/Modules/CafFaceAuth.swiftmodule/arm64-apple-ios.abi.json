@@ -4228,7 +4228,11 @@
                 "usr": "s:11CafFaceAuth0bC3SDKC5stageAA0A11EnvironmentOvM",
                 "mangledName": "$s11CafFaceAuth0bC3SDKC5stageAA0A11EnvironmentOvM",
                 "moduleName": "CafFaceAuth",
+                "deprecated": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -4313,7 +4317,11 @@
                 "usr": "s:11CafFaceAuth0bC3SDKC6filter0B8Liveness6FilterOvM",
                 "mangledName": "$s11CafFaceAuth0bC3SDKC6filter0B8Liveness6FilterOvM",
                 "moduleName": "CafFaceAuth",
+                "deprecated": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -4423,7 +4431,11 @@
                 "usr": "s:11CafFaceAuth0bC3SDKC8delegateAA0bC11SDKDelegate_pSgvM",
                 "mangledName": "$s11CafFaceAuth0bC3SDKC8delegateAA0bC11SDKDelegate_pSgvM",
                 "moduleName": "CafFaceAuth",
+                "deprecated": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -4508,7 +4520,11 @@
                 "usr": "s:11CafFaceAuth0bC3SDKC11withLoadingSbvM",
                 "mangledName": "$s11CafFaceAuth0bC3SDKC11withLoadingSbvM",
                 "moduleName": "CafFaceAuth",
+                "deprecated": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -4593,7 +4609,11 @@
                 "usr": "s:11CafFaceAuth0bC3SDKC22imageUrlExpirationTime0B8Liveness0H0OvM",
                 "mangledName": "$s11CafFaceAuth0bC3SDKC22imageUrlExpirationTime0B8Liveness0H0OvM",
                 "moduleName": "CafFaceAuth",
+                "deprecated": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -4679,7 +4699,11 @@
                 "usr": "s:11CafFaceAuth0bC3SDKC7sdkTypeAA05FASdkF0OvM",
                 "mangledName": "$s11CafFaceAuth0bC3SDKC7sdkTypeAA05FASdkF0OvM",
                 "moduleName": "CafFaceAuth",
+                "deprecated": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -4789,7 +4813,11 @@
                 "usr": "s:11CafFaceAuth0bC3SDKC18customLocalizationSSSgvM",
                 "mangledName": "$s11CafFaceAuth0bC3SDKC18customLocalizationSSSgvM",
                 "moduleName": "CafFaceAuth",
+                "deprecated": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -4827,8 +4855,10 @@
             "usr": "s:11CafFaceAuth0bC3SDKC05startbcD014viewController11mobileToken8personIdySo06UIViewG0C_S2StF",
             "mangledName": "$s11CafFaceAuth0bC3SDKC05startbcD014viewController11mobileToken8personIdySo06UIViewG0C_S2StF",
             "moduleName": "CafFaceAuth",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4917,7 +4947,11 @@
                     "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC5stageAA0A11EnvironmentOvM",
                     "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC5stageAA0A11EnvironmentOvM",
                     "moduleName": "CafFaceAuth",
+                    "deprecated": true,
                     "implicit": true,
+                    "declAttributes": [
+                      "Available"
+                    ],
                     "accessorKind": "_modify"
                   }
                 ]
@@ -5002,7 +5036,11 @@
                     "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC9sessionIdSSvM",
                     "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC9sessionIdSSvM",
                     "moduleName": "CafFaceAuth",
+                    "deprecated": true,
                     "implicit": true,
+                    "declAttributes": [
+                      "Available"
+                    ],
                     "accessorKind": "_modify"
                   }
                 ]
@@ -5087,7 +5125,11 @@
                     "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC11withLoadingSbvM",
                     "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC11withLoadingSbvM",
                     "moduleName": "CafFaceAuth",
+                    "deprecated": true,
                     "implicit": true,
+                    "declAttributes": [
+                      "Available"
+                    ],
                     "accessorKind": "_modify"
                   }
                 ]
@@ -5172,7 +5214,11 @@
                     "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC5tokenSSvM",
                     "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC5tokenSSvM",
                     "moduleName": "CafFaceAuth",
+                    "deprecated": true,
                     "implicit": true,
+                    "declAttributes": [
+                      "Available"
+                    ],
                     "accessorKind": "_modify"
                   }
                 ]
@@ -5257,7 +5303,11 @@
                     "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC6filter0B8Liveness6FilterOvM",
                     "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC6filter0B8Liveness6FilterOvM",
                     "moduleName": "CafFaceAuth",
+                    "deprecated": true,
                     "implicit": true,
+                    "declAttributes": [
+                      "Available"
+                    ],
                     "accessorKind": "_modify"
                   }
                 ]
@@ -5342,7 +5392,11 @@
                     "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC8personIdSSvM",
                     "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC8personIdSSvM",
                     "moduleName": "CafFaceAuth",
+                    "deprecated": true,
                     "implicit": true,
+                    "declAttributes": [
+                      "Available"
+                    ],
                     "accessorKind": "_modify"
                   }
                 ]
@@ -5427,7 +5481,11 @@
                     "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC22imageUrlExpirationTime0B8Liveness0I0OvM",
                     "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC22imageUrlExpirationTime0B8Liveness0I0OvM",
                     "moduleName": "CafFaceAuth",
+                    "deprecated": true,
                     "implicit": true,
+                    "declAttributes": [
+                      "Available"
+                    ],
                     "accessorKind": "_modify"
                   }
                 ]
@@ -5537,7 +5595,11 @@
                     "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC18customLocalizationSSSgvM",
                     "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC18customLocalizationSSSgvM",
                     "moduleName": "CafFaceAuth",
+                    "deprecated": true,
                     "implicit": true,
+                    "declAttributes": [
+                      "Available"
+                    ],
                     "accessorKind": "_modify"
                   }
                 ]
@@ -5852,9 +5914,11 @@
                 "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC5buildACyF",
                 "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC5buildACyF",
                 "moduleName": "CafFaceAuth",
+                "deprecated": true,
                 "isOpen": true,
                 "declAttributes": [
-                  "AccessControl"
+                  "AccessControl",
+                  "Available"
                 ],
                 "funcSelfKind": "NonMutating"
               }
@@ -5863,10 +5927,12 @@
             "usr": "s:11CafFaceAuth0bC3SDKC7BuilderC",
             "mangledName": "$s11CafFaceAuth0bC3SDKC7BuilderC",
             "moduleName": "CafFaceAuth",
+            "deprecated": true,
             "isOpen": true,
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "Available"
             ],
             "superclassUsr": "c:objc(cs)NSObject",
             "inheritsConvenienceInitializers": true,
@@ -5977,8 +6043,10 @@
         "usr": "c:@M@CafFaceAuth@objc(cs)FaceAuthSDK",
         "mangledName": "$s11CafFaceAuth0bC3SDKC",
         "moduleName": "CafFaceAuth",
+        "deprecated": true,
         "declAttributes": [
           "AccessControl",
+          "Available",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -6703,7 +6771,7 @@
     {
       "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-analytics\/CafAnalytics.swift",
       "kind": "Dictionary",
-      "offset": 505,
+      "offset": 540,
       "length": 3,
       "value": "[]"
     },
@@ -6711,6 +6779,20 @@
       "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-analytics\/CafAnalytics.swift",
       "kind": "StringLiteral",
       "offset": 618,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-analytics\/CafAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 650,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-analytics\/CafAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 718,
       "length": 14,
       "value": "\"install_guid\""
     },
@@ -6796,7 +6878,7 @@
       "kind": "StringLiteral",
       "offset": 434,
       "length": 46,
-      "value": "\"6.4.0-iOS-\""
+      "value": "\"6.5.0-iOS-\""
     },
     {
       "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-sdks\/caf-face-auth\/FaceAuthenticator\/Models\/Constants.swift",
@@ -8029,6 +8111,27 @@
       "offset": 1236,
       "length": 8,
       "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-analytics\/CafAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1273,
+      "length": 12,
+      "value": "\"stackTrace\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-analytics\/CafAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1315,
+      "length": 13,
+      "value": "\"mobileToken\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-analytics\/CafAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1357,
+      "length": 12,
+      "value": "\"entrypoint\""
     },
     {
       "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-analytics\/CafAnalyticsParams.swift",
