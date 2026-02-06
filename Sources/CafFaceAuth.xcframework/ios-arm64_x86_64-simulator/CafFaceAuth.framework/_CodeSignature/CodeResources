@@ -4,136 +4,183 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		PVIcxEr4sOwl/rPFMz+cMahj+G4=
+		</data>
 		<key>Headers/CafFaceAuth-Swift.h</key>
 		<data>
-		2lYSlFMKlc0WWhJCQ9PlFvmIyP8=
+		7zc1rKY/eVayAYIlpQKFciXjNIA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TQjMC6efv01xc1VWNs/B9f3aECo=
+		nugHAOPxk31CdlAMKONzSG+rSf8=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		mccju1fB9mSmaVAa0duDEEYrQxQ=
+		c0+suwj+ScOmtm8P6nHQc4rJaAU=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3c/+VBvXQfpMjaYCrqGOPx9vdVg=
+		v65j49IaBK3TmTggEmiq5SDXl+E=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xDguGVUTTLOhJOc0mGu1+/EK2rA=
+		P1wdwWqjNiMFisb/+FipiRSONdA=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3c/+VBvXQfpMjaYCrqGOPx9vdVg=
+		v65j49IaBK3TmTggEmiq5SDXl+E=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OkAgIGhHyieJ18X43QuUnHy/Loc=
+		sbfbShKid/w+eJxzMJIzaVCd/cg=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		mccju1fB9mSmaVAa0duDEEYrQxQ=
+		c0+suwj+ScOmtm8P6nHQc4rJaAU=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		oe4uyPVphV7bOgNZ264xcokY9BQ=
+		8TsCz73BONd2gsnzI/QNDdNy+lw=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		dfC6/srg6vsUTxWcqAQikkcLGj0=
+		PySPA6grwSasYJZXhpk3g0rWVls=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		oe4uyPVphV7bOgNZ264xcokY9BQ=
+		8TsCz73BONd2gsnzI/QNDdNy+lw=
 		</data>
 		<key>Modules/CafFaceAuth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ksQqUTATOGVgkuNdVBvZf+whf0E=
+		BcQJWYHfhmSx+t84eRB5aR4kp0s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		kW8qQ2SjnAOl/y6w8AXx4SgKFNI=
 		</data>
+		<key>en.lproj/CDSStrings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kFp+MDtzaC0RU8KrRtDGvdd/IVM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/CDSStrings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			139+vQ8W/2fy2QF3VaDQ2VMIl88=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt-BR.lproj/CDSStrings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wF/tV7s9QmxzBKAr26Zo8Qq7l+Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt-PT.lproj/CDSStrings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/YB6+fpdl91y+S0CSFO02hg/RTU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hvk+EaoCipn5/lVIfLyZeeaCbCajM8ZJyotf8eBT8Z0=
+			</data>
+		</dict>
 		<key>Headers/CafFaceAuth-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qF+x3HZqYhDm3VRrONRpGTbtLKy8SM5KM/I0/eab40k=
+			dEWBZXvGIlYRpFS40WKVHDsTCGktJNcu1R3MLeUBJlg=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hbkd0unIq8GpDG+X1Jkh0SfUfTVplSSQRIW+utiILXw=
+			u/DGUtJKlT9AB8yC0BVOdwkq5nIWBCySC/EoOTpE1Cs=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KgsLAZtFDD5AG8IYef4QGYgUDZ83XrGBuMKQrHM/MuE=
+			XF+oSMQKnWa8kIM7FYgf+mmt8832nnOQBsV6DEas1mc=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nTWytS9CGjS8BQR3WzhDDG2iCwUDFyjFeuLwXo69fe0=
+			6/E7uMVy3uQaX5r2rubuOETneTw4+x8uBnAAVWeZr5g=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KgsLAZtFDD5AG8IYef4QGYgUDZ83XrGBuMKQrHM/MuE=
+			XF+oSMQKnWa8kIM7FYgf+mmt8832nnOQBsV6DEas1mc=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kCpjehmvcvcU8vWVoyM/XsZQ+nAbeUdplmOkjX9oEe0=
+			CDrj2jildhs2Av4NUyl6lDjEysjxBnTl4wcpt+PzKd0=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hbkd0unIq8GpDG+X1Jkh0SfUfTVplSSQRIW+utiILXw=
+			u/DGUtJKlT9AB8yC0BVOdwkq5nIWBCySC/EoOTpE1Cs=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HZ6ANtSF94dhS7d3sVso1G0+2bUq9ST5eakRpSz3qPM=
+			x57LaTW15b9cPxSBVm8DspZYISfzoaiB0AsDzpdblRw=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A7Ae6cj9Qze/7r7u8Y4LIhZ2ymUHcHir2nr0aTN29pU=
+			zCj2vLdniMIlaFuYU4Olu2CH4WOo+7tWkL2mPzw6v+0=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HZ6ANtSF94dhS7d3sVso1G0+2bUq9ST5eakRpSz3qPM=
+			x57LaTW15b9cPxSBVm8DspZYISfzoaiB0AsDzpdblRw=
 			</data>
 		</dict>
 		<key>Modules/CafFaceAuth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+bwZHsppAoPU4oSeF8HriLZGzkWUQ2bQ96Y0IHG8g7s=
+			NAryNrA6N2RwLj1PXabCVshREMdy6oV9nCPRB2+qw/8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -142,6 +189,42 @@
 			<data>
 			CLXN6Bbc3sxCp7FU9SqW3b9mEAhgwMPPFIpeFPSZjEw=
 			</data>
+		</dict>
+		<key>en.lproj/CDSStrings.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0zPzsYHFmGZVbNYiKzt7MwIoQU8PYPWFQraeJ73euaE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/CDSStrings.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zjLGgkm5cel2BZ3mr+FN0XTS6mmNZ6Lx61nGDetdC0k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt-BR.lproj/CDSStrings.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4e0iHLCUd/zGImYZuS0ABuUQ++EwBrQcal1jk1ibYtM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt-PT.lproj/CDSStrings.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tNKRfqrTxtXorYquYuloncBWfvxKqFnDyvBzPvL5y/Y=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>
