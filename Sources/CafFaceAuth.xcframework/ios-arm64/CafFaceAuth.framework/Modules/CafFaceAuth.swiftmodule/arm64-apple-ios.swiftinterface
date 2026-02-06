@@ -1,103 +1,26 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CafFaceAuth
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CafFaceAuth
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import AVFoundation
 import AdSupport
 import CafSolutions
-import CommonCrypto/*.CC_LONG*/
-import CommonCrypto/*.CC_MD5*/
-import CommonCrypto/*.CC_MD5_DIGEST_LENGTH*/
+import CommonCrypto
+import Darwin
+import DeveloperToolsSupport
 import FaceLiveness
 import Foundation
+import MachO
+import Network
+import ObjectiveC
 import Security
 import Swift
+import SwiftUI
 import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public enum CafEnvironment : Swift.Int {
-  case dev
-  case beta
-  case prod
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-extension CafFaceAuth.CafEnvironment {
-  public func toString() -> Swift.String
-}
-public enum CafSdkPlatform : Swift.String {
-  case nativeIos
-  case reactNativeIos
-  case flutterIos
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct CafSDKError : Swift.Encodable {
-  public init(errorType: CafFaceAuth.CafErrorType, description: Swift.String?)
-  public let errorType: CafFaceAuth.CafErrorType
-  public let description: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-public struct CafSDKFailure : Swift.Encodable {
-  public init(signedResponse: Swift.String?, failureReason: CafFaceAuth.CafFailureType, description: Swift.String?)
-  public let signedResponse: Swift.String?
-  public let failureReason: CafFaceAuth.CafFailureType
-  public let description: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-public enum CafErrorType : Swift.String, Swift.Encodable, Swift.CaseIterable {
-  case unsupportedDevice
-  case cameraPermission
-  case networkException
-  case serverException
-  case tokenException
-  case captureAlreadyActiveException
-  case unexpectedErrorException
-  case userTimeoutException
-  case imageNotFoundException
-  case tooManyRequestsException
-  case unknownException
-  case libraryException
-  case permissionException
-  case invalidResponseException
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [CafFaceAuth.CafErrorType]
-  public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [CafFaceAuth.CafErrorType] {
-    get
-  }
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum CafFailureType : Swift.String, Swift.Encodable, Swift.CaseIterable {
-  case unknown
-  case tooMuchMovement
-  case tooBright
-  case tooDark
-  case misalignedFace
-  case eyesClosed
-  case faceTooFar
-  case faceTooClose
-  case sunglasses
-  case obscuredFace
-  case multipleFaces
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [CafFaceAuth.CafFailureType]
-  public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [CafFaceAuth.CafFailureType] {
-    get
-  }
-  public var rawValue: Swift.String {
-    get
-  }
-}
+import ObjectiveC.runtime
 public struct FaceAuthenticatorResult {
   public var isAlive: Swift.Bool?
   public var isMatch: Swift.Bool?
@@ -116,7 +39,9 @@ public enum FASdkType : Swift.String {
   case Native
   case ReactNative
   case Flutter
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -164,17 +89,196 @@ public class FaceAuthSDK : ObjectiveC.NSObject {
     open func setAuthBaseUrl(authBaseUrl: Swift.String) -> CafFaceAuth.FaceAuthSDK.Builder
     open func setLivenessBaseUrl(livenessBaseUrl: Swift.String) -> CafFaceAuth.FaceAuthSDK.Builder
     open func setCertificates(certificates: [Swift.String]) -> CafFaceAuth.FaceAuthSDK.Builder
+    #if compiler(>=5.3) && $NonescapableTypes
     open func setCustomLocalization(named: Swift.String?) -> CafFaceAuth.FaceAuthSDK.Builder
+    #endif
     @available(*, deprecated, message: "This method of using the SDK is deprecated. Use CafSDK as the single entry point for all functionalities. Access the integration documentation at: https://docs.caf.io/caf-sdk/ios/getting-started-with-the-sdk")
     open func build() -> CafFaceAuth.FaceAuthSDK
     @objc deinit
   }
   @objc deinit
 }
+final public class CafConfirmationNextStepContent {
+  final public var title: Swift.String?
+  final public var description: Swift.String?
+  final public var buttonTitle: Swift.String?
+  final public var image: UIKit.UIImage?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(title: Swift.String? = nil, description: Swift.String? = nil, buttonTitle: Swift.String? = nil, image: UIKit.UIImage? = nil)
+  #endif
+  @objc deinit
+}
+public struct ColorConfiguration {
+  public let primaryColor: Swift.String?
+  public let secondaryColor: Swift.String?
+  public let contentColor: Swift.String?
+  public let backgroundColor: Swift.String?
+  public let mediumColor: Swift.String?
+  public let dialogBackgroundColor: Swift.String?
+  public let dialogBorderColor: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(primaryColor: Swift.String? = nil, secondaryColor: Swift.String? = nil, contentColor: Swift.String? = nil, backgroundColor: Swift.String? = nil, mediumColor: Swift.String? = nil, dialogBackgroundColor: Swift.String? = nil, dialogBorderColor: Swift.String? = nil)
+  #endif
+}
+extension UIKit.UIColor {
+  convenience public init(byHex: Swift.String)
+}
+public struct CafInstructionsConfiguration {
+  public var enabled: Swift.Bool
+  public var captureTitle: Swift.String?
+  public var captureDescriptionText: Swift.String?
+  public var captureSteps: [Swift.String]?
+  public var captureButtonTitle: Swift.String?
+  public var captureHeaderImage: UIKit.UIImage?
+  public var uploadTitle: Swift.String?
+  public var uploadDescriptionText: Swift.String?
+  public var uploadSteps: [Swift.String]?
+  public var uploadButtonTitle: Swift.String?
+  public var uploadHeaderImage: UIKit.UIImage?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(enabled: Swift.Bool = true, captureTitle: Swift.String? = nil, captureDescriptionText: Swift.String? = nil, captureSteps: [Swift.String]? = nil, captureButtonTitle: Swift.String? = nil, captureHeaderImage: UIKit.UIImage? = nil, uploadTitle: Swift.String? = nil, uploadDescriptionText: Swift.String? = nil, uploadSteps: [Swift.String]? = nil, uploadButtonTitle: Swift.String? = nil, uploadHeaderImage: UIKit.UIImage? = nil)
+  #endif
+}
+public protocol CafInstructionsAnalyticsDelegate : AnyObject {
+  func cameraPermissionRequested()
+  func cameraPermissionGranted()
+  func cameraPermissionDenied()
+}
+public enum CafLogLevel : Swift.String {
+  case debug
+  case usage
+  case info
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CafEnvironment : Swift.Int {
+  case dev
+  case beta
+  case prod
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension CafFaceAuth.CafEnvironment {
+  public func toString() -> Swift.String
+}
+public enum CafSdkPlatform : Swift.String {
+  case nativeIos
+  case reactNativeIos
+  case flutterIos
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct CafSDKError : Swift.Encodable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(errorType: CafFaceAuth.CafErrorType, description: Swift.String?)
+  #endif
+  public let errorType: CafFaceAuth.CafErrorType
+  public let description: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct CafSDKFailure : Swift.Encodable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(signedResponse: Swift.String?, failureReason: CafFaceAuth.CafFailureType, description: Swift.String?)
+  #endif
+  public let signedResponse: Swift.String?
+  public let failureReason: CafFaceAuth.CafFailureType
+  public let description: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum CafErrorType : Swift.String, Swift.Encodable, Swift.CaseIterable {
+  case unsupportedDevice
+  case cameraPermission
+  case networkException
+  case serverException
+  case tokenException
+  case captureAlreadyActiveException
+  case unexpectedErrorException
+  case userTimeoutException
+  case imageNotFoundException
+  case tooManyRequestsException
+  case unknownException
+  case libraryException
+  case permissionException
+  case invalidResponseException
+  case cameraException
+  case certificateException
+  case invalidOptionsException
+  case securityException
+  case faceAuthentication
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [CafFaceAuth.CafErrorType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [CafFaceAuth.CafErrorType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CafFailureType : Swift.String, Swift.Encodable, Swift.CaseIterable {
+  case unknown
+  case tooMuchMovement
+  case tooBright
+  case tooDark
+  case misalignedFace
+  case eyesClosed
+  case faceTooFar
+  case faceTooClose
+  case sunglasses
+  case eyewear
+  case obscuredFace
+  case multipleFaces
+  case faceNotFound
+  case framesBlurry
+  case lightingIssues
+  case motionIssue
+  case backgroundIssue
+  case deviceIssue
+  case deviceRestart
+  case systemError
+  case rejected
+  case timeout
+  case userNotFound
+  case processingFault
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [CafFaceAuth.CafFailureType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [CafFaceAuth.CafFailureType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public struct FaceLivenessResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+extension CafFaceAuth.FASdkType : Swift.Equatable {}
+extension CafFaceAuth.FASdkType : Swift.Hashable {}
+extension CafFaceAuth.FASdkType : Swift.RawRepresentable {}
+extension CafFaceAuth.CafLogLevel : Swift.Equatable {}
+extension CafFaceAuth.CafLogLevel : Swift.Hashable {}
+extension CafFaceAuth.CafLogLevel : Swift.RawRepresentable {}
 extension CafFaceAuth.CafEnvironment : Swift.Equatable {}
 extension CafFaceAuth.CafEnvironment : Swift.Hashable {}
 extension CafFaceAuth.CafEnvironment : Swift.RawRepresentable {}
@@ -187,6 +291,3 @@ extension CafFaceAuth.CafErrorType : Swift.RawRepresentable {}
 extension CafFaceAuth.CafFailureType : Swift.Equatable {}
 extension CafFaceAuth.CafFailureType : Swift.Hashable {}
 extension CafFaceAuth.CafFailureType : Swift.RawRepresentable {}
-extension CafFaceAuth.FASdkType : Swift.Equatable {}
-extension CafFaceAuth.FASdkType : Swift.Hashable {}
-extension CafFaceAuth.FASdkType : Swift.RawRepresentable {}

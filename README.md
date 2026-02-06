@@ -8,7 +8,7 @@
 
 | SDK            | Version |
 | -------------- | ------- |
-| CafFaceAuth   | 6.5.0   |
+| CafFaceAuth   | 6.6.0-rc   |
 
 #### Requirements
 
@@ -27,7 +27,7 @@ Make sure to add an NSCameraUsageDescription entry to your app's Info.plist file
 
 ## Swift Package Manager (SPM) SDK Installation
 
-To add **CafFaceAuth 6.5.0** to your project using **Swift Package Manager**:
+To add **CafFaceAuth 6.6.0** to your project using **Swift Package Manager**:
 
 1. Open your Xcode project.
 2. Navigate to **File > Add Packages**.
@@ -35,7 +35,7 @@ To add **CafFaceAuth 6.5.0** to your project using **Swift Package Manager**:
 ```console
 https://github.com/combateafraude/CafFaceAuth.git
 ```
-4. Select the version `6.5.0` or choose "Up to Next Major" option to ensure that your project will automatically get future compatible updates.
+4. Select the version `6.6.0` or choose "Up to Next Major" option to ensure that your project will automatically get future compatible updates.
 
 5. Complete the steps, and Xcode will automatically integrate the **CafFaceAuth** SDK into your project.
 
