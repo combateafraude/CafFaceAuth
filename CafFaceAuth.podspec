@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CafFaceAuth'
-  s.version = '6.6.0-rc'
+  s.version = '6.6.0-rc.1'
   s.summary          = 'CafFaceAuth'
   s.homepage         = 'https://github.com/combateafraude/iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
   s.swift_version = '5.3.2'
   s.ios.deployment_target = '13.0'
   s.ios.vendored_frameworks = 'Sources/CafFaceAuth.xcframework'
-  s.dependency 'FaceLiveness', '7.3.0'
+  s.dependency 'FaceLiveness', '7.4.0-rc'
 end
