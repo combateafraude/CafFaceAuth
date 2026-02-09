@@ -8,13 +8,13 @@
 
 | SDK            | Version |
 | -------------- | ------- |
-| CafFaceAuth   | 6.6.0-rc   |
+| CafFaceAuth   | 6.6.0   |
 
 #### Requirements
 
 | Deployment Info | Version       |
 | --------------- | ------------- |
-| iOS Target      | 13.0+         |
+| iOS Target      | 15.0+         |
 | Xcode           | 15.4+         |
 | Swift           | 5.10+         |
 

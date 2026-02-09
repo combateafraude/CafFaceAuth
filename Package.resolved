@@ -1,43 +1,41 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "CafSolutions",
-        "repositoryURL": "https://github.com/combateafraude/CafSolutions.git",
-        "state": {
-          "branch": null,
-          "revision": "c7b8b0bdb4fc0194e7a8d9e15461045a0454c5cd",
-          "version": "1.0.1"
-        }
-      },
-      {
-        "package": "FaceLiveness",
-        "repositoryURL": "https://github.com/combateafraude/FaceLiveness.git",
-        "state": {
-          "branch": null,
-          "revision": "789e826ca04c96b3efd279faeb3fb13ffad3a168",
-          "version": "6.3.2"
-        }
-      },
-      {
-        "package": "FingerprintPro",
-        "repositoryURL": "https://github.com/fingerprintjs/fingerprintjs-pro-ios.git",
-        "state": {
-          "branch": null,
-          "revision": "df75db119bc63f51e8b4d8c9e4edf0f38f346912",
-          "version": "2.6.0"
-        }
-      },
-      {
-        "package": "iProov",
-        "repositoryURL": "https://github.com/iProov/ios.git",
-        "state": {
-          "branch": null,
-          "revision": "33db3b2559184651a780d76bba3add40f05d6c21",
-          "version": "12.2.1"
-        }
+  "pins" : [
+    {
+      "identity" : "cafsolutions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/combateafraude/CafSolutions.git",
+      "state" : {
+        "revision" : "c0f6acd2ce121ef2e43a9dcd682ea1e3ef3260e5",
+        "version" : "2.0.6"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "faceliveness",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/combateafraude/FaceLiveness.git",
+      "state" : {
+        "revision" : "b3d4bea19603c9614a8a512f77b7236b673b1de7",
+        "version" : "7.4.0"
+      }
+    },
+    {
+      "identity" : "fingerprintjs-pro-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/fingerprintjs/fingerprintjs-pro-ios.git",
+      "state" : {
+        "revision" : "51df49f935af022ceafbee34855500a37e0f35d3",
+        "version" : "2.7.0"
+      }
+    },
+    {
+      "identity" : "ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iProov/ios.git",
+      "state" : {
+        "revision" : "1715e64ba336a2b154f5fd6a4795442a8dae4a5a",
+        "version" : "13.1.0"
+      }
+    }
+  ],
+  "version" : 2
 }
